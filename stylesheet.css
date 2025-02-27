@@ -1,0 +1,483 @@
+@font-face {
+    font-family: 'Exo';
+    src: url('fonts/Exo-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'Exo-SemiBold';
+    src: url('fonts/Exo-SemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.first
+{
+    margin: 0 auto;
+    min-height: 100vh;
+
+}
+
+.navi
+{
+    /*background-color: red;*/
+    height: 100px;
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.logo
+{
+    /*background-color: #333333;*/
+    width: 30%;
+}
+
+.logo img
+{
+    margin-left: 60px;
+    height: 100px;
+    width: 120px;
+    filter: grayscale(100%) invert(100%);
+}
+
+.navi_bar
+{
+    /*background-color: aqua;*/
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 150px;
+}
+
+.navi_bar_element
+{
+    background-color: #ffffff;
+    padding: 50px 0 0 10px;
+    transition: transform 0.3s ease;
+    transform-origin: bottom;
+}
+
+.navi_bar_element:hover {
+    transform: scaleY(1.2); /* 垂直方向放大 1.2倍 */
+}
+
+.navi_bar_element p
+{
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Exo;
+    transition: font-size 0.3s ease;
+}
+
+.navi_bar_element:hover p {
+    font-size: 30px; /* 设置悬停时的字体大小 */
+}
+
+.main
+{
+    /*background-color: bisque;*/
+    width: 70%;
+    height: 550px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.selfie
+{
+    width: 40%;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;
+}
+
+.selfie img
+{
+    height: 400px;
+    width: 320px;
+}
+
+.name
+{
+    /*background-color: aqua;*/
+    width: 60%;
+    text-align: center;
+}
+
+.name p
+{
+    color: #6c6c6c;
+    font-family: Exo;
+    font-size: 24px;
+    margin-top: 140px;
+    margin-bottom: 5px;
+}
+
+.name h1
+{
+    font-size: 60px;
+    font-family: Exo-SemiBold;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.typed-container
+{
+    color: #6c6c6c;
+    font-family: Exo;
+    font-size: 28px;
+}
+
+.flag-container
+{
+    color: #6c6c6c;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.flag
+{
+    width: 35px;
+}
+
+.flag img
+{
+    height: 20px;
+    width: 35px;
+}
+
+.button-container
+{
+    /*background-color: aqua;*/
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 20px;
+}
+
+.button_0
+{
+    background-color: #000000;
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    border: 2px black solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Exo;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button_0 img
+{
+    transition: filter 0.2s ease;
+}
+
+.button_0:hover
+{
+    background-color: #ffffff;
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    border: 2px black solid;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-family: Exo;
+}
+
+.button_0:hover img {
+    filter: grayscale(100%) invert(100%);
+}
+
+.button_0 img
+{
+    margin-left: 4px;
+}
+
+.button_1
+{
+    background-color: #ffffff;
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    border: 2px black solid;
+    color: #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Exo;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button_1:hover
+{
+    background-color: #000000;
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    border: 2px #000000 solid;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Exo;
+    box-sizing: border-box;
+}
+
+.about_page
+{
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.next
+{
+    /*background-color: #f3edd1;*/
+    width: 80%;
+    text-align: right;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.next img
+{
+    height: 40px;
+    width: 40px;
+}
+
+.about
+{
+    width: 70%;
+    /*background-color: bisque;*/
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/* 为 h1 设置基本样式 */
+.about h1 {
+    font-family: Exo-SemiBold;
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    border-bottom: 4px black solid;
+    display: inline-block
+}
+
+.about_container
+{
+    width: 100%;
+    height: 540px;
+    margin: 0 auto;
+    display: flex;
+    gap: 4%;
+}
+
+
+.pics_gallery
+{
+    /*background-color: #7fb2ff;*/
+    width: 28%;
+    height: 100%;
+    text-align: center;
+}
+
+.context
+{
+    color: #6c6c6c;
+    font-family: Exo-SemiBold;
+    font-size: 20px;
+    margin: 2px auto;
+}
+
+.pic_title
+{
+    color: #000000;
+    font-family: Exo-SemiBold;
+    font-size: 24px;
+    margin: 2px auto;
+}
+
+
+.button_box
+{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_box img
+{
+    height: 30px;
+    width: 30px;
+}
+
+.pic_box
+{
+    /*background-color: #7fb2ff;*/
+    margin-left: 5%;
+    margin-top: 10%;
+    width: 90%;
+    position: relative;
+}
+
+.pic_box img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.floating_bar {
+    position: absolute;
+    bottom: 0;  /* 固定在页面底部 */
+    left: 0;    /* 从页面的左边开始 */
+    width: 100%; /* 设置为宽度 100% */
+    height: 6%;
+    /*background-color: rgba(0, 0, 0, 0.3); !* 背景色及透明度 *!*/
+    color: white; /* 文字颜色 */
+    text-align: center; /* 文字居中 */
+    z-index: 9999; /* 确保它在其他元素上面 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dash
+{
+    height: 3px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 15%;
+    margin: 2px;
+}
+
+
+
+.info
+{
+    border: 2px black solid;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 68%;
+    padding: 30px 30px;
+}
+
+.info p
+{
+    margin: 0;
+}
+
+.info_box
+{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.info_box img
+{
+    height: 18px;
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.Q
+{
+    font-family: Exo-SemiBold;
+    font-size: 20px;
+}
+
+.A
+{
+    color: #6e6e6e;
+    font-family: Exo;
+    font-size: 20px;
+}
+
+.FF
+{
+    color: #6c6c6c;
+    font-family: Exo;
+    font-size: 20px;
+}
+
+.status_box
+{
+    /*background-color: aqua;*/
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#activity, #time
+{
+    color: #6e6e6e;
+    font-family: Exo;
+    font-size: 20px;
+}
+
+#complement
+{
+    color: cornflowerblue;
+    font-family: Exo-SemiBold;
+    font-size: 22px;
+}
+
+footer {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background-color: #ff0101;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+

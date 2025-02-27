@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!-- saved from url=(0111)https://s0.2mdn.net/sadbundle/6513052047258920670/FIZZ-BAN-WIZARD-CAT-Perso-728x90-2306_en/index.html?ev=01_253 -->
+<html style="margin: 0px; padding: 0px; font-family: Roboto, sans-serif;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>PUBinteractive HTML5</title>
+<meta name="ad.size" content="width=728,height=90">
+<script type="text/javascript" src="./jquery.min.js"></script>
+<script type="text/javascript" src="./jquery-ui.min.js"></script>
+<link href="./css" rel="stylesheet">
+<style>
+.rotate90 {-moz-transform:rotate(90deg); -webkit-transform:rotate(90deg); -ms-transform:rotate(90deg); -o-transform:rotate(90deg);  transform:rotate(90deg);}
+.stretching {-webkit-transform:scale(1.3,1); -moz-transform:scale(1.3,1); -ms-transform:scale(1.3,1); -o-transform:scale(1.3,1); transform:scale(1.3,1);}
+.stretchingv {-webkit-transform:scale(2,1); -moz-transform:scale(2,1); -ms-transform:scale(2,1); -o-transform:scale(2,1); transform:scale(2,1);}
+.white {-webkit-filter: brightness(50); filter: brightness(50);}
+.grayscale {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
+p {font-family: Bookmark;width:100%;color:#fff;padding-top:15px;padding-left:15px;font-size:22px;margin:0!important;}
+a {font-family: BookmarkM;width:100%;font-size:12.2px;color:#fff;cursor: pointer;vertical-align: middle;}
+</style>
+<script>
+function animation(width, height, border, borderColor, URL, lang, bgColor) {
+var URL = URL;
+var width = width;
+var height = height;
+var border = border;
+var borderColor = borderColor;    
+var lang = lang;
+var bgColor = bgColor;
+/*do not remove*/
+$('div').css({position:"absolute", overflow:"hidden", cursor:"pointer", opacity:"1"});
+$('body, html').css({margin:0, padding:0, fontFamily:"'Roboto', sans-serif"});
+var rwidth = width-(border*2);
+var rheight = height-(border*2);
+if (border > 0) { $('#anim').css({border:""+border+"px Solid "+borderColor+""});}
+/*$('#anim').css({backgroundColor:""+bgColor+"", width:""+rwidth+"px", height:""+rheight+"px"}); */
+/*backup*/
+$('#anim').css({backgroundColor:""+bgColor+"", width:""+(rwidth-1)+"px", height:""+rheight+"px"});
+
+
+setTimeout(function(){ player.stopVideo();$('#videocontainer').fadeOut(); }, 30000);
+/*CSS DEFAULT*/
+$('#jungle').css({background:"url("+URL+"jungle-green.png) no-repeat", backgroundSize:"928px auto", backgroundPosition:"0px -300px", width:"728px", height:"90px", margin:"0px 0px", opacity:1});
+$('#visuel').css({background:"url("+URL+"visuel.gif) no-repeat", backgroundSize:"259px auto", backgroundPosition:"0px 0px", width:"259px", height:"90px", margin:"0px 0px", opacity:1});
+$('#logo').css({width:"101px", margin:"11px 11px 11px 0px", right:"0"});
+$('#logo').html('<img src="logoSans.svg">');
+
+$('#eclair, #eclair1, #eclair2, #eclair3').css({width:"0px", margin:"62px 364px"});
+$('#eclair').html('<img src="eclair-green.svg" width="100%">');
+$('#eclair1, #eclair2, #eclair3').html('<img src="eclair-full-rose.svg" width="100%">');
+
+$('#text1').css({width:"728px", margin:"0px -550px"});
+$('#text1').html('<img src="text1.svg" width="728px" padding="0px 0px 0px 0px">');
+$('#text2').css({width:"728px", margin:"0px -600px"});
+$('#text2').html('<img src="text2.svg" width="728px", padding="0px 0px 0px 0px">');
+$('#cta').css({background:"#06473c", margin:"58px -250px", padding:"3px 11px 1px 11px", borderRadius:"50px", color:"#FFF", fontSize:"9px", lineHeight:"16px"});
+$('#cta').html('<img src="cta.svg" width="42px">');
+
+/*$('#pastille').css({width:"300px", margin:"-21px -110px"});
+$('#pastille').html('<img src="pastille.svg" width="96px">'); 
+    
+    
+/*CLICKTAG MOTION*/
+$('#text1').animate({margin:"0px 0px"}, 500, 'easeOutExpo'); 
+
+$('#eclair1').delay(2200).animate({width:"5690px", margin:"-7000px -2400px"}, 800, 'easeInExpo');
+$('#eclair2').delay(2100).animate({width:"5690px", margin:"-7000px -2400px"}, 800, 'easeInExpo');
+$('#eclair3').delay(2000).animate({width:"5690px", margin:"-7000px -2400px"}, 800, 'easeInExpo');
+
+$('#eclair').delay(2300).animate({width:"30px", margin:"12px 340px"}, 200, 'easeOutBack');
+$('#eclair').delay(40).animate({width:"5690px", margin:"-7000px -2400px"}, 400, 'easeInCubic');
+//$('#eclair').delay(3000).animate({width:"5690px", margin:"-7000px -2400px"}, 1000, 'easeInExpo');
+
+$('#eclair,#eclair1,#eclair2,#eclair3').delay(0).animate({width:"0px"}, 0, 'linear');
+$('#text1').delay(2000).animate({margin:"0px 900px"}, 0, 'easeOutExpo');
+
+/*$('#pastille').delay(25).animate({margin:"-21px -26px"}, 500, 'easeOutExpo'); */ 
+$('#text2').delay(2500).animate({margin:"0px 0px"}, 0, 'easeOutExpo');
+$('#cta').delay(3000).animate({margin:"58px 270px"}, 800, 'easeOutExpo');
+	
+$('#cta').hover(function(){        
+    $('#cta').animate({backgroundColor:"#191919"}, 100);
+}, function(){
+    $('#cta').animate({backgroundColor:"#06473c"}, 100);
+});
+
+
+  
+}
+
+
+function start() {
+var URL = '';
+var width = 728;
+var height = 90;
+var border = 1;
+var borderColor = '#333';   
+var bgColor = '#00D672';     
+var lang = 'en';
+var loop = 2;  /*number of loop*/
+var time = 6; /*seconds*/
+
+	$('#anim').show();
+	var counter = 1;
+	if (loop == 1) {counter = 0}
+	animation(width, height, border, borderColor, URL, lang, bgColor);
+var looper = setInterval(function(){ 
+    if (counter > 0){
+		animation(width, height, border, borderColor, URL, lang, bgColor);
+		counter++;
+		}
+	/*counter++;*/
+    if (counter >= loop){clearInterval(looper);}
+}, time*1000);
+
+}
+document.write(' ');
+/*window.onload = start;*/
+$(window).load(function() {
+    start();
+});
+</script> 
+
+<script>
+  
+function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+	  
+function gotourl() {
+	  /*var clickTag = getParameterByName('clickTAG') || getParameterByName('clickTag') || getParameterByName('clicktag');*/
+	  var clickTag = 'https://fizz.ca/internet';
+	  /*var clickTag = location.search.split('clicktag=')[1];*/
+	  window.open(clickTag, '_blank');
+}
+</script>
+
+
+
+<script type="text/javascript">
+    
+  (function() {
+    var MAX_URL_PARAM_LENGTH = 34;
+    var CLICK_X_URL_KEY = 'nx';
+    var CLICK_Y_URL_KEY = 'ny';
+    var CREATIVE_DIMENSIONS_KEY = 'dim';
+    var AD_URL_PARAM = '&adurl=';
+
+    var relegateNavigation = '';
+    var urlParamMap = {};
+
+    urlParamMap[CLICK_X_URL_KEY] = null;
+    urlParamMap[CLICK_Y_URL_KEY] = null;
+    urlParamMap[CREATIVE_DIMENSIONS_KEY] = null;
+
+    var handleClickTagMessage = function(e) {
+      try {
+        var eventData = JSON.parse(e.data);
+      } catch (err) {
+        return;
+      }
+      if (eventData.isInitClickTag) {
+        if (eventData.clickTags) {
+          for (var i = 0; i < eventData.clickTags.length; i++) {
+            var clkTag = eventData.clickTags[i];
+            window[clkTag.name] = clkTag.url;
+          }
+        } else if (eventData.clickTag) {
+          window.clickTag = eventData.clickTag;
+        }
+        relegateNavigation = eventData.relegateNavigation;
+      }
+    };
+
+    var storeClickCoordinates = function(e) {
+      urlParamMap[CLICK_X_URL_KEY] = Math.round(e.clientX);
+      urlParamMap[CLICK_Y_URL_KEY] = Math.round(e.clientY);
+    };
+
+    var getCreativeDimensions = function() {
+      return window.innerWidth + 'x' + window.innerHeight;
+    }
+
+    var getExitClickParams = function(e) {
+      urlParamMap[CREATIVE_DIMENSIONS_KEY] = getCreativeDimensions();
+
+      var exitParams = '';
+      for (var key in urlParamMap) {
+        exitParams += '&' + key + '=';
+        if (urlParamMap[key] !== null) {
+          exitParams += urlParamMap[key];
+        }
+      }
+      return exitParams;
+    }
+
+    var appendExitClickParams = function(url) {
+      var adUrlIndex = url.toLowerCase().indexOf(AD_URL_PARAM);
+      var paramsToBeAdded = getExitClickParams();
+      if (adUrlIndex > -1 && paramsToBeAdded.length <= MAX_URL_PARAM_LENGTH) {
+        url = url.substr(0, adUrlIndex) + paramsToBeAdded +
+          url.substr(adUrlIndex);
+      };
+      return url;
+    };
+
+    if (open.call) {
+      window.open = function(open) {
+        return function(url, name, features) {
+          url = appendExitClickParams(url);
+          if (relegateNavigation === 'parent') {
+            var message = {'clickTag': url, 'isPostClickTag': true};
+            parent.postMessage(JSON.stringify(message), '*');
+          } else {
+            var args = [url, name];
+            if (features) {
+              args.push(features);
+            }
+            open.apply(window, args);
+          }
+        };
+      }(window.open);
+    }
+
+    if (window.addEventListener) {
+      window.addEventListener(
+          'message', handleClickTagMessage, false);
+      window.addEventListener('mousedown', storeClickCoordinates, true);
+    } else {
+      window.attachEvent('onmessage', handleClickTagMessage);
+    }
+  })();
+    
+  </script></head><body style="margin: 0px; padding: 0px; font-family: Roboto, sans-serif;">
+
+<div id="anim" onclick="window.open(window.clickTag)" style="background-color: rgb(0, 214, 114); position: absolute; overflow: hidden; cursor: pointer; opacity: 1; border: 1px solid rgb(51, 51, 51); width: 725px; height: 88px;">
+<div id="pastille" style="z-index: 1; position: absolute; overflow: hidden; cursor: pointer; opacity: 1;"></div>      
+<div id="jungle" style="position: absolute; overflow: hidden; cursor: pointer; background: url(&quot;jungle-green.png&quot;) 0px -300px / 928px no-repeat; width: 728px; height: 90px; margin: 0px; opacity: 1;"></div>
+<div id="cta" style="z-index: 0; color: rgb(255, 255, 255); position: absolute; overflow: hidden; cursor: pointer; opacity: 1; background: rgb(6, 71, 60); padding: 3px 11px 1px; border-radius: 50px; font-size: 9px; line-height: 16px; margin: 58px 270px;"><img src="./cta.svg" width="42px"></div>
+<div id="text1" style="position: absolute; overflow: hidden; cursor: pointer; opacity: 1; width: 728px; margin: 0px 900px;"><img src="./text1.svg" width="728px" padding="0px 0px 0px 0px"></div>
+<div id="text2" style="position: absolute; overflow: hidden; cursor: pointer; opacity: 1; width: 728px; margin: 0px;"><img src="./text2.svg" width="728px" ,="" padding="0px 0px 0px 0px"></div>
+<div id="visuel" style="z-index: 0; position: absolute; overflow: hidden; cursor: pointer; background: url(&quot;visuel.gif&quot;) 0px 0px / 259px no-repeat; width: 259px; height: 90px; margin: 0px; opacity: 1;"></div>
+<div id="logo" style="position: absolute; overflow: hidden; cursor: pointer; opacity: 1; width: 101px; margin: 11px 11px 11px 0px; right: 0px;"><img src="./logoSans.svg"></div>
+<div id="eclair" style="z-index: 3; position: absolute; overflow: hidden; cursor: pointer; opacity: 1; margin: -7000px -2400px; width: 0px;"><img src="./eclair-green.svg" width="100%"></div>
+<div id="eclair1" style="z-index: 3; position: absolute; overflow: hidden; cursor: pointer; opacity: 1; margin: -7000px -2400px; width: 0px;"><img src="./eclair-full-rose.svg" width="100%"></div>
+<div id="eclair2" style="z-index: 3; position: absolute; overflow: hidden; cursor: pointer; opacity: 1; margin: -7000px -2400px; width: 0px;"><img src="./eclair-full-rose.svg" width="100%"></div>
+<div id="eclair3" style="z-index: 3; position: absolute; overflow: hidden; cursor: pointer; opacity: 1; margin: -7000px -2400px; width: 0px;"><img src="./eclair-full-rose.svg" width="100%"></div>
+</div>
+
+</body></html>
