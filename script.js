@@ -22,22 +22,22 @@ function updateStatus() {
 
     if (currentHour >= 6 && currentHour < 12) {
         activity = "sleeping😴";
-        complement = "Sorry, I'm not a morning person...";
+        complement = "\"Sorry, I'm not a morning person...\"";
     } else if (currentHour >= 12 && currentHour < 14) {
         activity = "cooking&eating🍳😆";
-        complement = "A talented cook is working, any restaurant hiring?";
+        complement = "\"A talented cook is working, any restaurant hiring?\"";
     } else if (currentHour >= 14 && currentHour < 18) {
         activity = "studying📚";
-        complement = "Deep in study mode. Brain loading...";
+        complement = "\"Deep in study mode. Brain loading...\"";
     } else if (currentHour >= 18 && currentHour < 19) {
         activity = "preparing my dinner";
-        complement = "You should try my steak🥩—it’s so tender and juicy";
+        complement = "\"You should try my steak🥩—it’s so tender and juicy\"";
     } else if (currentHour >= 19 && currentHour < 21) {
         activity = "working out in the gym💪";
-        complement = "DM me if you want a sneak peek of my abs...(No offense)";
+        complement = "\"DM me if you want a sneak peek of my abs...(No offense)\"";
     }else if (currentHour >= 21 && currentHour < 23) {
         activity = "in Game time🎮";
-        complement = "Hope you don’t match with me in League";
+        complement = "\"Hope you don’t match with me in League\"";
     }else {
         activity = "probably doing anything ><";
         complement = "\"Hey, late-night adventurer! Shouldn't you be getting sleep?\"";
