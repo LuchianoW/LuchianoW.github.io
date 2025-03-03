@@ -274,12 +274,6 @@ body
     box-sizing: border-box;
 }
 
-.about_page
-{
-    margin: 0 auto;
-    min-height: 100vh;
-}
-
 .next
 {
     /*background-color: #f3edd1;*/
@@ -399,11 +393,6 @@ body
         padding: 10px 10px;
     }
 
-    .about_page
-    {
-        margin: 0 auto;
-        min-height: 100vh;
-    }
 
     .next
     {
@@ -423,157 +412,19 @@ body
 
 }
 
-@media (max-width: 500px)
+
+
+.about_page
 {
-    .navi
-    {
-        width: 95%;
-        flex-grow: 2.0;
-    }
-
-    .navi_bar
-    {
-        width: 75%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .navi_bar_element p
-    {
-        font-size: 14px;
-    }
-    .logo
-    {
-        width: 20%;
-        margin-left:0;
-    }
-
-    .logo img
-    {
-        margin-top: 20px;
-        height: 60px;
-        width: 60px;
-        margin-left:0;
-    }
-    .main
-     {
-         width: 100%;
-        flex-direction: column; /* 子元素垂直排列 */
-        text-align: center;
-        padding-bottom: 0;
-        flex-grow: 6.0;
-     }
-
-    .selfie
-    {
-       width: 100%;
-        padding-top: 50px;
-    }
-
-    .selfie img
-    {
-        height: 200px;
-        width: 160px;
-    }
-
-    .name
-    {
-        width: 100%;
-    }
-
-    .name p
-    {
-        font-size: 20px;
-        margin-top: 50px;
-    }
-
-    .name h1
-    {
-        font-size: 50px;
-    }
-
-    .typed-container
-    {
-        font-size: 24px;
-    }
-
-    .flag-container
-    {
-        color: #6c6c6c;
-        display: flex;
-        justify-content: center; /* 水平居中 */
-        align-items: center;
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-    .flag
-    {
-        width: 35px;
-    }
-
-    .flag img
-    {
-        height: 20px;
-        width: 35px;
-    }
-
-
-    .button_0
-    {
-        width: 140px;
-        height: 60px;
-        border-radius: 15px;
-        padding: 10px 10px;
-    }
-
-
-    .button_0:hover
-    {
-        width: 140px;
-        height: 60px;
-        border-radius: 15px;
-        padding: 10px 10px;
-    }
-
-
-    .button_1
-    {
-        width: 140px;
-        height: 60px;
-        border-radius: 15px;
-        padding: 10px 10px;
-    }
-
-    .button_1:hover
-    {
-        width: 140px;
-        height: 60px;
-        border-radius: 15px;
-        padding: 10px 10px;
-    }
-
-    .about_page
-    {
-        margin: 0 auto;
-        min-height: 100vh;
-    }
-
-    .next
-    {
-        flex-grow: 6.0;
-        text-align: center;
-    }
-
-    .next img
-    {
-        height: 40px;
-        width: 40px;
-    }
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
 }
 
 .about
 {
+    flex-grow: 8.5;
     width: 70%;
     /*background-color: bisque;*/
     height: auto;
@@ -606,7 +457,10 @@ body
     /*background-color: #7fb2ff;*/
     width: 28%;
     height: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* 水平居中 */
+    align-items: center;  /* 垂直居中 */
 }
 
 .context
@@ -709,6 +563,12 @@ body
     margin-top: 3px;
 }
 
+#route
+{
+    width: 100%;
+    height: 20%;
+}
+
 .Q
 {
     font-family: Exo-SemiBold;
@@ -751,19 +611,264 @@ body
     font-size: 22px;
 }
 
-footer {
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-    background-color: #ff0101;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+@media (max-width: 500px)
+{
+    .navi
+    {
+        width: 95%;
+        flex-grow: 2.0;
+    }
 
-footer p {
-    margin: 0;
-    font-size: 14px;
-    color: #333;
-}
+    .navi_bar
+    {
+        width: 75%;
+        padding-left: 0;
+        padding-right: 0;
+    }
 
+    .navi_bar_element p
+    {
+        font-size: 14px;
+    }
+    .logo
+    {
+        width: 20%;
+        margin-left:0;
+    }
+
+    .logo img
+    {
+        margin-top: 20px;
+        height: 60px;
+        width: 60px;
+        margin-left:0;
+    }
+    .main
+    {
+        width: 100%;
+        flex-direction: column; /* 子元素垂直排列 */
+        text-align: center;
+        padding-bottom: 0;
+        flex-grow: 6.0;
+    }
+
+    .selfie
+    {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .selfie img
+    {
+        height: 200px;
+        width: 160px;
+    }
+
+    .name
+    {
+        width: 100%;
+    }
+
+    .name p
+    {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .name h1
+    {
+        font-size: 50px;
+    }
+
+    .typed-container
+    {
+        font-size: 24px;
+    }
+
+    .flag-container
+    {
+        color: #6c6c6c;
+        display: flex;
+        justify-content: center; /* 水平居中 */
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .flag
+    {
+        width: 35px;
+    }
+
+    .flag img
+    {
+        height: 20px;
+        width: 35px;
+    }
+
+
+    .button_0
+    {
+        width: 140px;
+        height: 60px;
+        border-radius: 15px;
+        padding: 10px 10px;
+    }
+
+
+    .button_0:hover
+    {
+        width: 140px;
+        height: 60px;
+        border-radius: 15px;
+        padding: 10px 10px;
+    }
+
+
+    .button_1
+    {
+        width: 140px;
+        height: 60px;
+        border-radius: 15px;
+        padding: 10px 10px;
+    }
+
+    .button_1:hover
+    {
+        width: 140px;
+        height: 60px;
+        border-radius: 15px;
+        padding: 10px 10px;
+    }
+
+
+    .next
+    {
+        flex-grow: 6.0;
+        text-align: center;
+    }
+
+    .next img
+    {
+        height: 40px;
+        width: 40px;
+    }
+
+    .about_page
+    {
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .about
+    {
+        flex-grow: 8.5;
+        width: 90%;
+        /*background-color: bisque;*/
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    /* 为 h1 设置基本样式 */
+    .about h1 {
+        font-family: Exo-SemiBold;
+        font-size: 30px;
+        margin-bottom: 20px;
+        position: relative;
+        border-bottom: 4px black solid;
+        display: inline-block
+    }
+
+    .about_container
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+
+    .pics_gallery
+    {
+        /*background-color: #7fb2ff;*/
+        display: none;
+    }
+
+
+
+    .info
+    {
+        width: 100%;
+        height: 88%;
+        padding:10% 10%;
+    }
+
+    .info p
+    {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .info_box
+    {
+        display: flex;
+        margin-bottom: 5px;
+    }
+
+    .info_box img
+    {
+        height: 18px;
+        width: 30px;
+        margin-left: 10px;
+        margin-top: 3px;
+    }
+
+    #route
+    {
+        width: 100%;
+        height: 20%;
+    }
+
+    .Q
+    {
+        font-family: Exo-SemiBold;
+        font-size: 18px;
+    }
+
+    .A
+    {
+        color: #6e6e6e;
+        font-family: Exo;
+        font-size: 18px;
+    }
+
+    .FF
+    {
+        color: #6c6c6c;
+        font-family: Exo;
+        font-size: 20px;
+    }
+
+    .status_box
+    {
+        /*background-color: aqua;*/
+        height: 60px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    #activity, #time
+    {
+        color: #6e6e6e;
+        font-family: Exo;
+        font-size: 20px;
+    }
+
+    #complement
+    {
+        color: cornflowerblue;
+        font-family: Exo-SemiBold;
+        font-size: 22px;
+    }
+}
