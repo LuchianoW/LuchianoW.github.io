@@ -69,8 +69,6 @@ body
 {
     background-color: #ffffff;
     padding: 50px 0 0 10px;
-    /*transition: transform 0.3s ease;*/
-    /*transform-origin: bottom;*/
 }
 
 .navi_bar_element:hover {
@@ -625,7 +623,6 @@ body
     .navi
     {
         width: 95%;
-        height: 100px;
         flex-grow: 1.0;
         padding-top: 0%;
     }
@@ -637,10 +634,19 @@ body
         padding-right: 0;
     }
 
+    .navi_bar_element
+    {
+        background-color: #ffffff;
+        padding: 25px 0 0 10px;
+    }
+
     .navi_bar_element p
     {
+        margin: 0;
         font-size: 14px;
     }
+
+
     .logo
     {
         width: 20%;
@@ -649,7 +655,7 @@ body
 
     .logo img
     {
-        margin-top: 20px;
+        margin-top: 0;
         height: 60px;
         width: 60px;
         margin-left:0;
