@@ -613,10 +613,21 @@ body
 
 @media (max-width: 500px)
 {
+    .first
+    {
+        margin: 0 auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;  /* 让子元素垂直排列 */
+        justify-content: center;
+    }
+
     .navi
     {
         width: 95%;
-        flex-grow: 2.0;
+        height: 100px;
+        flex-grow: 1.0;
+        padding-top: 0%;
     }
 
     .navi_bar
@@ -649,7 +660,7 @@ body
         flex-direction: column; /* 子元素垂直排列 */
         text-align: center;
         padding-bottom: 0;
-        flex-grow: 6.0;
+        flex-grow: 6.5;
     }
 
     .selfie
@@ -807,7 +818,7 @@ body
     .info p
     {
         margin: 0;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .info_box
@@ -833,14 +844,14 @@ body
     .Q
     {
         font-family: Exo-SemiBold;
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .A
     {
         color: #6e6e6e;
         font-family: Exo;
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .FF
@@ -862,13 +873,13 @@ body
     {
         color: #6e6e6e;
         font-family: Exo;
-        font-size: 20px;
+        font-size: 17px;
     }
 
     #complement
     {
         color: cornflowerblue;
         font-family: Exo-SemiBold;
-        font-size: 22px;
+        font-size: 20px;
     }
 }
