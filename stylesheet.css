@@ -524,13 +524,16 @@ body
 
 .dash
 {
-    height: 3px;
+    height: 4px;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.7);
     width: 15%;
     margin: 2px;
 }
 
+.dash:hover {
+    background-color: white;
+}
 
 
 .info
@@ -606,7 +609,7 @@ body
 {
     color: cornflowerblue;
     font-family: Exo-SemiBold;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 @media (max-width: 500px)
@@ -886,6 +889,6 @@ body
     {
         color: cornflowerblue;
         font-family: Exo-SemiBold;
-        font-size: 20px;
+        font-size: 17px;
     }
 }

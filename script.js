@@ -51,3 +51,66 @@ function updateStatus() {
 
 setInterval(updateStatus, 1000);  // Update every second
 
+const images = [
+    "image/p1.png",
+    "image/p2.png",
+    "image/p3.png",
+    "image/p4.png",
+    "image/p5.png",
+    "image/p6.png"
+];
+
+const texts = [
+    "\"Graduation Day\"",
+    "\"I'm Kirby\"",
+    "\"><\"",
+    "\"Pride!\"",
+    "\"Wild Teemo\"",
+    "\"Xmas in YZU\"",
+];
+
+
+let currentIndex = 0;
+let interval;
+const imgElement = document.getElementById("displayImg");
+const textElement = document.getElementById("pic_context");
+const dashes = document.querySelectorAll(".dash");
+
+// 自动轮播函数
+function startSlideshow() {
+    interval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage();
+    }, 3500); // 每2秒切换
+}
+
+// 更新图片
+function updateImage() {
+    imgElement.src = images[currentIndex];
+}
+
+function updateContext() {
+    textElement.innerText = texts[currentIndex];
+}
+
+// 停止轮播
+function stopSlideshow() {
+    clearInterval(interval);
+}
+
+// 监听 dash 悬停
+dashes.forEach(dash => {
+    dash.addEventListener("mouseenter", () => {
+        stopSlideshow();
+        currentIndex = parseInt(dash.dataset.index); // 读取 data-index
+        updateImage();
+        updateContext()
+    });
+
+    dash.addEventListener("mouseleave", () => {
+        startSlideshow();
+    });
+});
+
+// 启动轮播
+startSlideshow();
