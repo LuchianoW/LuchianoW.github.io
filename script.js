@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("CV").addEventListener("click", function () {
-        window.open("./C.V_QW.pdf", "_blank");
+        window.open("./QW_v0310.pdf", "_blank");
     });
 });
 
